@@ -1,0 +1,52 @@
+@keyframes tack{
+    from{background-color: brown;
+        width: 50px;
+        color: cornsilk;
+        left: 300px;
+        top: 0;
+    }
+
+
+    to{background-color: coral;
+        width: 100px;
+        border: 1px solid black;
+        color: seagreen;
+        left: 300px;
+        top:300px;
+    }
+
+}
+
+@keyframes second{
+    0%{top: 0px;left: 0px;background-color: aqua
+
+    }
+    50%{top 0px;left: 500px;background-color: crimson;
+
+    }
+    100%{top: 500px;left: 250px;background-color: indigo;
+
+    }
+}
+.item1 {
+    width: 50px;
+    height: 50px;
+    font-size: larger;
+    text-align: center;
+    padding-top: 25px;
+    background-color: blue;
+    animation-name: tack;
+    animation-duration: 5s;
+    position: relative;
+}
+
+.item2{
+    width: 60px;
+    height: 40px;
+    font-size: larger;
+    text-align: center;
+    padding-top: 20px;
+    animation-name: second;
+    animation-duration: 5s;
+    position: relative;
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table{
+            border-collapse: collapse ;
+            width: 100%;
+            
+        }
+       
+        th{
+            font-size: 1.8rem;
+            background-color: cadetblue;
+            height: 50px;
+            
+        }
+        
+        .set, tr,td{
+            border: 1px solid black;
+            height: 40px;
+            width: 30%;
+            
+        }
+        .row{
+            height: 30px;
+        }
+        li{
+            font-size: large;
+        }
+    </style>
+    <title>Homework</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th colspan="2">
+                value ใน display property มีอะไรบ้าง
+            </th>
+        </tr>
+        <tr>
+            <td>inline</td>
+            <td>แสดงองค์ประกอบเป็นองค์ประกอบแบบอินไลน์</td>
+        </tr>
+        <tr>
+            <td>block</td>
+            <td>แสดงองค์ประกอบเป็นองค์ประกอบ Block โดยเริ่มบรรทัดใหม่เสมอ</td>
+        </tr>
+        <tr>
+            <td>contents</td>
+            <td>ทำให้ Container หายไป และทำให้ทำให้องค์ประกอบย่อยเป็นประกอบย่อยของถัดไป</td>
+        </tr>
+        <tr>
+            <td>flex</td>
+            <td>สร้าง block-level flex container</td>
+        </tr>
+        <tr>
+            <td>grid</td>
+            <td>สร้าง block-level grid container</td>
+        </tr>
+        <tr>
+            <td>inline-block</td>
+            <td>เป็นองค์ประกอบของ inline-level block container โดยจัดรูปแบบเป็น inline แต่ยังสามารถเพิ่มลด ความยาว สูง ได้</td>
+        </tr>
+        <tr>
+            <td>inline-flex</td>
+            <td>เป็นองค์ประกอบของ inline-level flex container</td>
+        </tr>
+        <tr>
+            <td>inline-grid</td>
+            <td>เป็นองค์ประกอบของ inline-level grid container</td>
+        </tr>
+        <tr>
+            <td>inline-table</td>
+            <td>เป็นองค์ประกอบของ inline-level table</td>
+        </tr>
+        <tr>
+            <td>list-item</td>
+            <td>มีลักษณะคล้ายกับ li </td>
+        </tr>
+        <tr>
+            <td>run-in</td>
+            <td>เป็นองค์ประกอบของ block or inline, context</td>
+        </tr>
+        <tr>
+            <td>table</td>
+            <td>มีลักษณะคล้ายกับ table </td>
+        </tr>
+        <tr>
+            <td>table-caption</td>
+            <td>มีลักษณะคล้ายกับ caption</td>
+        </tr>
+        <tr>
+            <td>table-column-group</td>
+            <td>มีลักษณะคล้ายกับ colgroup </td>
+        </tr>
+        <tr>
+            <td>table-header-group</td>
+            <td>มีลักษณะคล้ายกับ thead </td>
+        </tr>
+        <tr>
+            <td>table-footer-group</td>
+            <td>มีลักษณะคล้ายกับ tfoot</td>
+        </tr>
+        <tr>
+            <td>table-row-group</td>
+            <td>มีลักษณะคล้ายกับ tbody </td>
+        </tr>
+        <tr>
+            <td>table-cell</td>
+            <td>มีลักษณะคล้ายกับ td</td>
+        </tr>
+        <tr>
+            <td>table-column</td>
+            <td>มีลักษณะคล้ายกับ col</td>
+        </tr>
+        <tr>
+            <td>table-row</td>
+            <td>มีลักษณะคล้ายกับ tr</td>
+        </tr>
+        <tr>
+            <td>none</td>
+            <td>องค์ประกอบจะถูกลบออกอย่างสมบูรณ์</td>
+        </tr>
+        <tr>
+            <td>initial</td>
+            <td>ตั้งค่าคุณสมบัตินี้เป็นค่าเริ่มต้น</td>
+        </tr>
+        <tr>
+            <td>inherit</td>
+            <td>สืบทอดคณสมบัติจาก องค์ประกอบตัวลูก</td>
+        </tr>
+    </table><br><br>
+
+    <table>
+        <tr >
+            <th colspan="2">grid และ flex แตกต่างกันอย่างไร</th>
+        </tr>
+        <tr >
+            <td style="text-align: center;">flex เมื่อ layout มีลักษณะการวางของต่างๆเป็นแถวเดียว ไม่แนวตั้งก็นอน (1D)</td>
+            <td style="text-align: center;">grid เมื่อ items ด้านในเรามีการจัดเรียงตัวที่ไม่ได้มีแค่แถวเดียว แต่มีลักษณะเป็น column กับ row (2D)</td>
+        </tr>
+       
+    </table><br><br>
+    
+    <table>
+        <tr>
+            <th colspan="2">justify and align แตกต่างกันอย่างไร</th>
+        </tr>
+        <tr>
+            <td style="text-align: center;">justify : ใช้จัดเรียงวัตถุในแนวนอนtd>
+            <td style="text-align: center;">align : ใช้จัดเรียงวัตถุในแนวตั้ง</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th colspan="2">position คืออะไร และ มีอะไรบ้าง</th>
+        </tr>
+        <tr>
+            <td>คือการกำหนดจุดพิกัดในการแสดงผล</td>
+        </tr>
+        <tr>
+           <td>
+               <ol >
+                    <li>static</li>
+                    <li>relative</li>
+                    <li>absolute</li>
+                    <li>fixed</li>
+                </ol>
+            </td>
+        </tr>
+    </table><br><br>
+
+
+    <table>
+        <tr>
+            <th>z-index คืออะไรใช้อย่างไร</th>
+        </tr>
+        <tr>
+            <td style="text-align: center;">ใช้จัดเรียง element ที่ซ้อนกันและมีผลกับ element ที่กำหนด position ไว้เท่านั้นครับ (เช่น position:absolute; ,position:relative;)</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table{
+            border-collapse: collapse ;
+            width: 100%;
+            
+        }
+        img{
+            height: 200px;
+        }
+        th{
+            font-size: 1.8rem;
+            background-color: cadetblue;
+            
+        }
+        
+        .set, tr,td{
+            border: 1px solid black;
+            height: 40px;
+            
+        }
+        .row{
+            height: 30px;
+        }
+    </style>
+    <title>homework#1</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th colspan="2">
+                CSS syntax ประกอบด้วยอะไรบ้าง
+            </th>
+        </tr>
+        <tr>
+            <th colspan="2"><img src="https://www.w3schools.com/css/selector.gif" alt=""></th>
+        </tr>
+        <tr>
+            <td>Selector</td>
+            <td>ส่วนไหนใน html ที่เราต้องการแต่ง</td>
+        </tr>
+        <tr>
+            <td>Property</td>
+            <td>คุณสมบัติในการจัดรูปแบบการแสดงผล</td>
+        </tr>
+        <tr>
+            <td>Value</td>
+            <td>ค่าที่เราจะกำหนดให้กับ property </td>
+        </tr>
+    </table><br><br>
+
+
+
+
+
+    <table>
+        <tr>
+            <th colspan="2">การเขียน CSS มีกี่แบบอะไรบ้าง</th>
+        </tr>
+        <tr>
+            <td>1.Inline</td>
+            <td>การเขียนแทรกลงไปในบรรทัดนั้นๆ ของ tag</td>
+        </tr>
+        <tr>
+            <td>2.Internal(embedded)</td>
+            <td> เขียนแยก CSS ออกจาก tag แต่อยู่ในหน้าเดียวกันกับไฟล์ HTML</td>
+        </tr>
+        <tr>
+            <td>3.External</td>
+            <td>การเขียน แยก css ออกมาเป็นไฟล์ .css ต่างหาก แล้วนำเข้าไปใช้ในหน้าเว็บ</td>
+        </tr>
+    </table><br><br>
+
+
+
+    <table>
+        <tr>
+            <th colspan="2">selector มีกี่แบบอะไรบ้าง</th>
+        </tr>
+        <tr>
+            <td>1.Class Selectors</td>
+            <td>
+                เป็น Selector ที่เราต้องกำหนดชื่อของ Selector ขึ้นมาเอง โดย Class Selector การเรียกใช้งานต้องระบุชื่อ Class Selectors ให้กับ Tag ของ HTML จึงจะสามารถใช้งานคุณสมบัติของ Class ที่ได้สร้างไว้ได้
+            </td>
+        </tr>
+        <tr>
+            <td>2.ID Selectors</td>
+            <td>เป็น Selector ที่อ้างอิงกับ Attribute ที่ชื่อว่า ID ซึ่งเขียนอยู่ภายใน Tag ของ HTML โดยที่ Tag ของ HTML ใดมี ID ซึ่งตรงกับ ID Selectors ที่กำหนด คุณสมบัติของ CSS ที่กำหนดไว้กับ Selector ก็จะมีผลต่อ Tag นั้น</td>
+        </tr>
+        <tr>
+            <td>3.TAG Selectors</td>
+            <td>เป็น Selector ที่อ้างอิงกับชื่อ Tag ของ HTML โดยตรง</td>
+        </tr>
+    </table><br><br>
+
+
+    <table>
+        <tr>
+            <th colspan="2">combinator มีกี่แบบอะไรบ้าง</th>
+        </tr>
+        <tr>
+            <td>1.Descendant combinators</td>
+            <td> การเขียน Selector เพื่อสั่งการทำงานทั้งหมด ทั้ง ลูก หลาน  โดยการเขียนนั้น ใช้ "ช่องว่าง" ในการสั่งงาน เช่น article li { } หมายถึง li ทั้งหมดที่มีอยู่ใน article</td>
+        </tr>
+        <tr>
+            <td>2.Child combinators</td>
+            <td>การสั่งงานเฉพาะ "ลูก" เท่านั้น ไม่นับรวมตัวอื่นการเขียนนั้น ใช้ "เครื่องหมายมากกว่า หรือ greater-than sign (>)" เช่น section>div { } คือ ให้กระทำการใดๆ กับ div ที่เป็น ลูกของ section เท่านั้น ถ้ามี div ซ้อนอยู่ใน div อีกที จะไม่ถูกสั่งการ</td>
+        </tr>
+        <tr >
+            <td rowspan="2" >3.Sibling combinators</td>
+            <td>Adjacent sibling combinator คือ "น้องที่อยู่ถัดไป 1 คนเท่านั้น" ไม่นับคนที่ 3 หรือ คนอื่นๆ การเขียนนั้น ใช้ "เครื่องหมายบวก (+)" เช่น section+section { } คือ ให้กระทำการใดๆ กับ section ที่อยู่ต่อจาก section ที่เป็นพี่เท่านั้น</td>
+        </tr>
+        <tr class="row">
+            <td >General sibling combinator คือ "น้องที่อยู่ถัดไปทุก ๆ คน" ใช้ "เครื่องหมายตัวหนอน หรือ tilde (~)" เช่น h1~p { } คือ ให้กระทำการใดๆ กับ p ที่อยู่หลัง h1 ไม่ว่าจะอยู่ในลำดับที่เท่าไร</td>
+        </tr>
+    </table><br><br>
+
+
+    <table>
+        <tr>
+            <th>property และ value คืออะไรแตกต่างกันอย่างไร</th>
+        </tr>
+        <tr>
+            <td>Property
+                คือชื่อคุณสมบัติของ css เช่น width, height, position ฯลฯ </td>
+        </tr>
+        <tr>
+            <td>Values
+                คือค่าของ property นั้นๆ ครับ เช่น 500px สำหรับความกว้าง</td>
+        </tr>
+    </table><br><br>
+
+    <table>
+        <tr>
+            <th>property ที่สอนใน precamp มีกี่กลุ่มอะไรบ้าง</th>
+        </tr>
+        <tr>
+            <td>1.Property of content <br>
+                2.Property of border <br>
+                3.Property of padding <br>
+                4.Property of margin <br>
+                5.Property of element
+            </td>
+        </tr>
+    </table><br><br>
+
+
+    <table>
+        <tr>
+            <th colspan="2">
+                value unit มีกี่ประเภทอะไรบ้างแต่ละ ประเภทคืออะไร
+            </th>
+        </tr>
+        <tr>
+            <td>1.Absolute lengths</td>
+            <td>คือ กำหนดแบบอัตราส่วน เช่น px (pixels, สัมพันธ์กับค่าความละเอียดของหน้าจอ) เช่น 1px, 4px</td>
+        </tr>
+        <tr>
+            <td>2.Relative lengths</td>
+            <td>กำหนดตายตัว  in (inches; 1in=2.54cm =72pt =6pc) เช่น 2in, 1.5in</td>
+        </tr>
+    </table>
+
+</body>
+</html>

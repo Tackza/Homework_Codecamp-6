@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .box{
+            width: 350px;
+        }
+        
+        .linetext{
+            display:flex;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            background-color: rgb(212, 216, 224);
+            
+        }
+        .information-1{
+            margin-right: 30px;
+            margin-bottom: 10px;
+        }
+        .info{
+            width: 128px;
+            height: 25px;
+        }
+        .amount{
+            width: 40px;
+            height: 20px;
+        }
+        .currency{
+            width: 60px;
+            height: 25px;
+        }
+        .search{
+            width: 80px;
+            height: 40px;
+            background-color: coral;
+            margin-top: 20px;
+        }
+
+    </style>
+    <title>homework</title>
+</head>
+<body>
+    <fieldset class="box">
+    <legend class="text-top">Book Flight</legend>
+        <form action="" class="linetext">
+            <div class="information-1">
+                <div >Fiying from</div>
+                    <select class="info" name="place">
+                        <option value="Karachi" >Karachi, Pakistarn</option> 
+                        <option value="Karachi" >Islamabad, Pakistarn</option> 
+                    </select>
+            </div>    
+            <div class="information-1">
+                <div >To</div>
+                    <select class="info" name="place">
+                        <option value="Karachi" >Islamabad, Pakistarn</option> 
+                        <option value="Karachi" >Karachi, Pakistarn</option> 
+                    </select>
+            </div>    
+        </form>
+        <form action="" class="linetext">
+            <div class="information-1">
+                <div>Departing</div>
+                <input type="date" class="info">
+            </div>
+            <div class="information-1">
+                <section>Returning</section>
+                <input type="date" class="info">
+            </div>
+        </form>
+
+        <form action="" class="linetext">
+            <div class="information-1">
+                <section>Adult</section>
+                <input type="number" min="0" placeholder="1" class="amount">
+            </div>
+            <div class="information-1">
+                <section>Child</section>
+                <input type="number" min="0" placeholder="0" class="amount">
+            </div>
+            <div class="information-1">
+                <section>Infant</section>
+                <input type="number" min="0" placeholder="0" class="amount">
+            </div>
+            <div class="information-1">
+                <section>Currency</section>
+                <select name="" id="" class="currency">
+                <option value="" >PKR</option>
+                <option value="" >BTH</option>
+            </select> 
+            </div> 
+        </form>
+        <button class="search">SEARCH</button> 
+       
+    </fieldset>
+</body>
+</html>
+<section></section>

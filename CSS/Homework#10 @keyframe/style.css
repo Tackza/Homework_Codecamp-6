@@ -1,0 +1,40 @@
+.move1{
+    width: 60px;
+    height: 60px;
+    background-color: darkcyan;
+    border: black 1px solid;
+    text-align: center;
+    position: relative;
+    animation : test 5s 2s infinite ;
+    line-height: 60px;
+    
+}
+.move2{
+    width: 60px;
+    height: 60px;
+    background-color: darkcyan;
+    border: black 1px solid;
+    text-align: center;
+    position: relative;
+    line-height: 60px;
+    animation: test 5s 2s alternate infinite;
+}
+.move3{
+    width: 60px;
+    height: 60px;
+    background-color: darkcyan;
+    border: black 1px solid;
+    text-align: center;
+    position: relative;
+    animation: test 5s 2s alternate-reverse infinite linear;
+    line-height: 60px;
+}
+
+@keyframes test{
+    0%   {background-color:red; left:0px; top:0px;opacity: 0;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;opacity: 1;}
+  
+}
