@@ -7,29 +7,45 @@
 </head>
 <style>
     *{
-        background: rgb(187, 236, 183);
+        background: rgb(37, 88, 32);
     }
     h1{
         display: block;
         text-align: center;
         font-family: 'Courier New', Courier, monospace;
-        color: rgb(77, 77, 80);
+        color: rgb(255, 255, 255);
         margin-top: 50px;
     }
     img{
-        display: block;
+        display: flex;
         align-items: center;
         margin: 50px auto;
-    }
-    .img-center{
-        background-color: rgb(37, 37, 59);
-        margin: 100px ;
         border-radius: 20px;
     }
+    
+    
     .textmenu{
-        
+        display: flex;
+        justify-content: space-evenly;
         text-align: center;
         margin-bottom: 50px;
+    }
+    .textmenu a{
+        background-color: rgb(142, 141, 233);
+        padding: 15px 32px;
+        text-decoration: none;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+
+    }
+    @media only screen and (min-device-width: 700px) {
+        img{
+            width: 80%;
+            
+        }
     }
 </style>
 <body>
@@ -38,7 +54,7 @@
         <img src="photography-of-person-holding-black-camera-lens-759960.jpg" alt="my picture" width="700px" >
     </div>
     <div class="textmenu">
-        <a href="profile.html">โปรไฟล์</a><br><br>
+        <a href="profile.html">โปรไฟล์</a>
         <a href="friend.html">รายชื่อเพื่อน Codecamp#6</a>
     </div>
 </body>
